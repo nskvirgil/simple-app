@@ -29,10 +29,10 @@ pipeline {
                     ], 
                     credentialsId: 'nexus3', 
                     groupId: 'in.javahome', 
-                    nexusUrl: '172.31.15.204:8081', 
+                    nexusUrl: 'http://localhost:8081/repository/mysimpleappReleaseRepo/', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: nexusRepoName, 
+                    repository: mysimpleappReleaseRepo, 
                     version: "${mavenPom.version}"
                     }
             }
